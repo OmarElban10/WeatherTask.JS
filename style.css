@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #101027;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #1d1d2e;
+  padding: 10px 20px;
+  display: flex;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+
+}
+
+.navbar-logo img {
+  width: 40px;
+
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.navbar-logo span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-logo small {
+  font-size: 15px;
+  color: #767373;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 30px
+}
+
+.navbar-links li {
+  margin-left: 50px;
+  border: 2px solid transparent;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 16px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  color: #009ad8;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+
+.navbar-links a:hover {
+
+  background-color: #009ad8;
+  color: #fbfcfc;
+  border-radius: 30px;
+  padding: 5px 25px;
+  transition: 0.6s ease;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    margin-top: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+}
+
+
+
+.search button:hover {
+  background-color: #008ecc;
+}
+
+/* Weather Cards */
+.forecast {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.card {
+
+  background-color: #2b2b3b;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+}
+
+.card .day {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card .temperature {
+  font-size: 2rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.card .condition {
+  font-size: 1.2rem;
+
+  color: #00aaff;
+}
+
+.card .wind {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #34343c;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.form {
+  position: relative;
+}
+
+.form input[type="button"] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  padding: 0 40px;
+}
+
+.form input[type="text"] {
+ 
+  position: relative;
+}
+
+.main {
+  background-image: url(images/banner.png);
+  background-repeat: no-repeat;
+}
+
+.main input {
+  background-color: #2b2b3b;
+  color: white;
+  border: none;
+  height: 60px;
+}
+
+.main input::placeholder {
+  color: white;
+
+}
+
+footer .input {
+  background-color: #2b2b3b;
+  color: white;
+  border: none;
+  height: 60px;
+}
+
+footer .input:focus {
+  background-color: #2b2b3b;
+  color: #ffffff;
+}
+
+footer .input::placeholder {
+  color: white;
+}
+
+.footer .icon {
+  border: 2px solid #009ad8;
+
+}
+
+.card2 img {
+  display: block;
+  margin: 0 auto;
+}
+
+.main input:focus {
+  background-color: #2b2b3b;
+  color: #ffffff;
+}
+
+
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-logo {
+    margin-bottom: 15px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar-links li {
+    margin-left: 0;
+  }
+
+  .navbar-links a {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  /* Main Section */
+  .main {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .form {
+    margin: 20px 0;
+  }
+
+  .form .input-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .form button {
+    width: 100%;
+  }
+
+  /* Forecast Section */
+  .forecast {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  footer .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .form .input-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  footer .form input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  footer .form button {
+    width: 100%;
+  }
+
+  footer .icon {
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+}

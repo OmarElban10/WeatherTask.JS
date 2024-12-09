@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather JS</title>
+    
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo Section -->
+            <div class="navbar-logo d-flex ">
+                <img src="images/logo@2x.png" class="w-50">
+                <span>Weather</span>
+                <small>tagline goes here</small>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="navbar-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Live cameras</a></li>
+                <li><a href="#">Photos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+      </nav>
+       
+    </div>
+      <section class="main">
+        <div class="form container mb-3 w-100 m-5 py-5 px-5 d-flex justify-content-center ">
+          <div class="input-group " style="position: relative; width: 100%; max-width: 800px;">
+            <input 
+              type="text" 
+              id="city"
+              class="form-control rounded-5 text-light " 
+              placeholder="Find your Location.. "  
+              aria-label="Recipient's username" 
+              style="padding-right: 60px;" 
+            >
+            <button 
+              class="btn btn-primary rounded-5" 
+              type="button" 
+              id="findButton"
+              style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); height: 80%; background-color: #009ad8;"
+            >
+              Find
+            </button>
+          </div>
+        </div>
+        
+    
+       <div class="container ">
+         <section class="forecast text-light">
+          <div class="card">
+          
+            
+            <h2 class="day text-light" style="color: #8e8e8e;">Monday
+              <span style="color: #8e8e8e; padding: 60px;">7December</span>
+            </h2>
+            <hr>
+            <p class="text-light" style="text-align: left;">Cairo</p>
+
+            <h2 class="temperature " style="font-size: 6.4285714286rem; font-weight: bold ;   ">19.3°C</h2>
+            <br>
+            <img src="images/113 (1).webp" alt="" class="w-25 d-flex justify-content-start">
+            <p class="condition d-flex justify-content-start">Clear</p>
+            <div class="span infor align-content-between d-flex justify-content-start container">
+              <div class="p-2">
+              <img src="images/icon-umberella.png" alt="">
+              <span class="text-light">20%</span>
+              </div>
+              <div  class="p-2">
+              <img src="images/icon-wind.png" alt="">
+              <span class="text-light">18km/h</span>
+            </div>
+            <div  class="p-2">
+              <img src="images/icon-compass.png" alt="">
+              <span class="text-light">East</span>
+            </div>
+
+            </div>
+          </div>
+          <div class="card card2" style="background-color: #1e202b;">
+            <h2 class="day text-light " >Tuesday</h2>
+          <br>
+            <img src="images/113.webp"  alt="" class="w-10">
+            <h3 class="temperature" style=" font-weight:bold ;">21.6°C</h3>
+            <p class="condition">Sunny</p>
+          </div>
+          <div class="card position-relative card2">
+            <h2 class="day text-light">Wednesday</h2>
+            <br>
+            <img src="images/113.webp" alt="" class="w-10 " >
+            <h3 class="temperature" style="font-weight:bold ;">22.1°C</h3>
+            <p class="condition">Sunny</p>
+          </div>
+        </section>  
+       </div>
+      
+      <footer class="d-flex position-relative">
+        <div class="form container mb-3 w-100 m-5 py-5 px-5 d-flex justify-content-center">
+          <div class="input-group" style="position: relative; width: 100%; max-width: 800px;">
+            <input 
+              type="text" 
+              class="input form-control rounded-5 " 
+              placeholder="Entre Your Email To Subscribe"  
+              aria-label="Recipient's username" 
+              style="padding-right: 60px;" 
+            >
+            <button 
+              class="btn btn-primary rounded-5" 
+              type="button" 
+              id="button-addon2" 
+              style="position: absolute; right: 5px; top: 50%; transform: translateY(-50%); height: 80%; background-color: #009ad8;"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="icon d-flex align-items-center ms-4 g-3 rounded-5 ">
+            <i class="fa-brands fa-facebook me-3"></i>
+            <i class="fa-brands fa-twitter me-3"></i>
+            <i class="fa-brands fa-google me-3"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+        
+      </footer>
+        <p class=" text-center" style="color: #bfc1c8 ;" >Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+    <script src="index.js"></script>
+</body>
+</html>
